@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App chrome */
+.app-shell {
+  @apply min-h-screen grid grid-cols-[260px_1fr] grid-rows-[64px_1fr] bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100;
+}
+.header {
+  @apply col-span-2 h-16 border-b border-neutral-200 dark:border-neutral-800 flex items-center justify-between px-4;
+}
+.sidebar {
+  @apply row-start-2 col-start-1 border-r border-neutral-200 dark:border-neutral-800 p-3;
+}
+.content {
+  @apply row-start-2 col-start-2 p-6;
+}
+
+/* Cards */
+.card {
+  @apply rounded-2xl shadow-sm border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/60 backdrop-blur p-4;
+}
